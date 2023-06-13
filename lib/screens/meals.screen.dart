@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:meal_app/models/meals.model.dart';
+import 'package:meal_app/screens/meal_details.screen.dart';
 import 'package:meal_app/screens/widgets/mealsWidgets/meal_item.widget.dart';
 
 class MealsScreen extends StatelessWidget {
   const MealsScreen({super.key, required this.title, required this.meals});
+
   final String title;
   final List<Meal> meals;
+
   @override
   Widget build(BuildContext context) {
     Widget content = Center(
@@ -31,6 +34,13 @@ class MealsScreen extends StatelessWidget {
           return Card(
             child: MealItem(
               meal: meals[index],
+              onSelectMeal: (meal) {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (ctx) => MealDetailsScreen(meal: meal),
+                  ),
+                );
+              },
             ),
           );
         },
