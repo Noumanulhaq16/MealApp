@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/data/dummy.data.dart';
-import 'package:meal_app/models/category.model.dart';
-import 'package:meal_app/models/meals.model.dart';
-import 'package:meal_app/screens/meals.screen.dart';
-import 'package:meal_app/screens/widgets/categoriesWidgets/grid_items.widgets.dart';
+import 'package:MealApp/data/dummy.data.dart';
+import 'package:MealApp/models/category.model.dart';
+import 'package:MealApp/models/meals.model.dart';
+import 'package:MealApp/screens/meals.screen.dart';
+import 'package:MealApp/screens/widgets/categoriesWidgets/grid_items.widgets.dart';
 
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen(

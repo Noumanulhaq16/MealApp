@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/data/dummy.data.dart';
-import 'package:meal_app/models/meals.model.dart';
-import 'package:meal_app/screens/categories.screen.dart';
-import 'package:meal_app/screens/filters.screen.dart';
-import 'package:meal_app/screens/meals.screen.dart';
-import 'package:meal_app/screens/widgets/drawerWidgets/main_drawer.widgets.dart';
+import 'package:MealApp/data/dummy.data.dart';
+import 'package:MealApp/models/meals.model.dart';
+import 'package:MealApp/screens/categories.screen.dart';
+import 'package:MealApp/screens/filters.screen.dart';
+import 'package:MealApp/screens/meals.screen.dart';
+import 'package:MealApp/screens/widgets/drawerWidgets/main_drawer.widgets.dart';
 
 const kInitialFilters = {
   Filter.glutenFree: false,
