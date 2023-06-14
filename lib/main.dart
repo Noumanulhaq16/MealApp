@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/screens/categories.screen.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meal_app/screens/tab.screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,8 +9,8 @@ void main() {
 final themeData = ThemeData(
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
+    brightness: Brightness.dark,
     seedColor: const Color.fromARGB(255, 131, 57, 0),
-    brightness: Brightness.light,
   ),
   textTheme: GoogleFonts.latoTextTheme(),
 );
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Meal App',
       theme: themeData,
-      home: const CategoriesScreen(),
+      home: const TabScreen(),
     );
   }
 }
